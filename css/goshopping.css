@@ -1,0 +1,292 @@
+/*------------左邊區塊--------------*/
+.wrapper {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+/*-------------左邊區塊 第二個名子較SHOP-----------------*/
+.wrapper .shop{
+    position: absolute;
+    background-color:#fff;
+    width: 100%;
+    height: 100%;
+    padding-right:140px;
+    /*background-color: #7991bf;*/
+}
+/*-----------------vertical------------------------*/
+
+.wrapper .verticaltable{
+    display: table;
+}
+.wrapper .shop .vertical {
+    vertical-align: middle;
+    display: table-cell;
+}
+/*-------------購物車icon--------------*/
+.wrapper .shop .goshoppcar{
+    width: 100%;
+    /*background-color: #89aa64;*/
+    text-align: center;
+    /*padding:250px 0 0;*/
+    font-size: 10rem;
+    transition: .3s;
+}
+.wrapper .shop .goshoppcar img{
+    /*transition: .3s;*/
+}
+/*--------------主標H1----------------------*/
+.wrapper .shop .shoppingtext{
+    margin-top: 20px;
+    width: 100%;
+    /*background-color: #7e58aa;*/
+    font-size: 3.4rem;
+    text-align: center;
+    /*transition: .3s;*/
+}
+.wrapper .shop .shoppingtext h1{
+    line-height: 50px;
+    display: inline;
+    border-bottom: 1px solid #000;
+    transition: .3s;
+}
+/*--------------副標h2-------------------*/
+.wrapper .shop .shoppingtext2{
+    margin:auto;
+    width: 80%;
+    /*background-color: #a562aa;*/
+    padding-top: 30px;
+    font-size: 1.4rem;
+    text-align: center;
+    transition: .3s;
+}
+.wrapper .shop .shoppingtext2 p{
+    line-height: 1.7rem;
+}
+.wrapper .shop  .truckh2{
+    /*width: 35%;*/
+    font-size:1.3rem;
+}
+/*----------------按鈕區域--------------------------*/
+.wrapper .shop .goshoppingbtn{
+    position: relative;
+    margin: 30px auto 0;
+    width: 30%;
+    /*height: 7%;*/
+    text-align: center;
+    /*background-color: #aaa55a;*/
+    line-height:75px;
+    transition: .3s;
+}
+.wrapper .shop .welcomeBackbtn{
+    margin: 10px auto 0;
+}
+/*---------------按鈕連結-------------------*/
+.wrapper .shop .goshoppingbtn a{
+    display: inline-block;
+    font-size: 1.5rem;
+    width: 100%;
+    height: 100%;
+    color:#111;
+    position: relative;
+    transition: .3s;
+}
+.wrapper .shop .goshoppingbtn:after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 1px solid #111;
+    transform: scale3d(1, 1, 1);
+    transition: all .6s;
+    pointer-events: none;
+}
+.wrapper .shop .goshoppingbtn:hover a{
+    /*background-color: #111;*/
+    color:#fff;
+    background: rgba(0,0,0,.8);
+}
+.wrapper .shop .goshoppingbtn:hover:after{
+    opacity: 0;
+    transform: scale3d(.8, .8, 1);
+}
+
+/*-----------�media-----------*/
+@media screen and (min-width: 768px) and (max-width: 1200px){
+    /*-------------購物車icon--------------*/
+    .wrapper .shop .goshoppcar{
+        width: 100%;
+        /*background-color: #89aa64;*/
+        text-align: center;
+        /*padding:280px 0 0;*/
+        font-size: 8rem;
+        /*transition: .3s;*/
+    }
+    .wrapper .shop .goshoppcar img{
+        width: 150px;
+        height: 140px;
+    }
+    /*--------------主標H1----------------------*/
+    .wrapper .shop .shoppingtext{
+        margin-top: 30px;
+        width: 100%;
+        /*background-color: #7e58aa;*/
+        font-size: 2.6rem;
+        text-align: center;
+    }
+    /*--------------副標h2-------------------*/
+    .wrapper .shop .shoppingtext2{
+        margin:auto;
+        width: 80%;
+        /*background-color: #a562aa;*/
+        padding-top: 20px;
+        font-size: 1rem;
+        text-align: center;
+        /*transition: .3s;*/
+    }
+    .wrapper .shop .shoppingtext2 p{
+        line-height: 1.4rem;
+    }
+    /*----------------按鈕區域--------------------------*/
+    .wrapper .shop .goshoppingbtn{
+        /*margin-top: 20px;*/
+        /*padding-top: 0px;*/
+        width: 35%;
+        /*height: 46%;*/
+        /*line-height:52px;*/
+        text-align: center;
+        /*background-color: #aaa55a;*/
+        /*transition: .3s;*/
+    }
+    .wrapper .shop .welcomeBackbtn{
+        /*padding-top: 10px;*/
+        line-height: 25px;
+    }
+    /*-----------------vertical------------------------*/
+    .verticaltable{
+        display: table;
+    }
+    .wrapper .shop .vertical {
+        vertical-align: middle;
+        display: table-cell;
+    }
+    /*---------------按鈕連結-------------------*/
+    .wrapper .shop .goshoppingbtn a{
+        display: inline-block;
+        font-size: 1.2rem;
+        width: 100%;
+        height: 100%;
+        color:#111;
+        position: relative;
+        /*transition: all .6s;*/
+    }
+    .wrapper .shop .welcomeBackbtn a{
+        padding: 25px 0;
+    }
+    .wrapper .shop .goshoppingbtn:after{
+        content: '';
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        border: 1px solid #111;
+        transform: scale3d(1, 1, 1);
+        transition: all .6s;
+        pointer-events: none;
+    }
+    .wrapper .shop .goshoppingbtn:hover a{
+        /*background-color: #111;*/
+        color:#fff;
+        background-color:#000 ;
+    }
+    .wrapper .shop .goshoppingbtn:hover:after{
+        opacity: 0;
+        transform: scale3d(.8, .8, 1);
+    }
+
+}
+@media screen and (max-width: 767px) {
+    .wrapper .shop{
+        position: absolute;
+        background-color:#fff;
+        width: 100%;
+        height: 100%;
+        padding-right:0;
+        padding-top: 50px;
+        padding-bottom: 45px;
+        /*background-color: #7991bf;*/
+    }
+    /*-------------購物車icon--------------*/
+    .wrapper .shop .goshoppcar{
+        width: 100%;
+        /*background-color: #89aa64;*/
+        text-align: center;
+        /*padding:280px 0 0;*/
+        font-size: 6rem;
+        /*transition: .3s;*/
+    }
+    .wrapper .shop .goshoppcar img{
+        width: 100px;
+        height: 88px;
+    }
+    /*--------------主標H1----------------------*/
+    .wrapper .shop .shoppingtext{
+        margin-top: 10px;
+        width: 100%;
+        /*background-color: #7e58aa;*/
+        font-size: 1.8rem;
+        text-align: center;
+    }
+    .wrapper .shop .shoppingtext h1{
+        line-height: 35px;
+    }
+    /*--------------副標h2-------------------*/
+    .wrapper .shop .shoppingtext2{
+        margin:auto;
+        width: 80%;
+        /*background-color: #a562aa;*/
+        padding-top: 20px;
+        font-size: .5rem;
+        text-align: center;
+        /*transition: .3s;*/
+    }
+    .wrapper .shop .shoppingtext2 p{
+        line-height: 1rem;
+    }
+    /*----------------按鈕區域--------------------------*/
+    .wrapper .shop .goshoppingbtn{
+        padding-top: 0;
+        width: 38%;
+        /*height: 50px;*/
+        text-align: center;
+        line-height: 0px;
+    }
+    .wrapper .shop .welcomeBackbtn{
+        line-height: 20px;
+    }
+    /*---------------按鈕連結-------------------*/
+    .wrapper .shop .goshoppingbtn a {
+        padding: 11px 0;
+        font-size: 1rem;
+        width: 100%;
+        height: 100%;
+        line-height: 25px;
+    }
+    /*-----------------vertical------------------------*/
+    .wrapper .shop .vertical{
+        position: relative;
+        top:0;
+        transform:none;
+    }
+    .wrapper .verticaltable{
+        display: table;
+    }
+    .wrapper .shop .vertical {
+        vertical-align: middle;
+        display: table-cell;
+    }
+}

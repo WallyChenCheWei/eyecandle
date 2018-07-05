@@ -1,0 +1,64 @@
+[2015-09-20 23:15 Asia/Taipei] HTTP request of validation request:POST /cgi-bin/webscr HTTP/1.1
+Host: www.sandbox.paypal.com
+Accept: */*
+Connection: Close
+Content-Length: 1220
+Content-Type: application/x-www-form-urlencoded
+Expect: 100-continue
+
+ for IPN payload: cmd=_notify-validate&mc_gross=450.00&protection_eligibility=Ineligible&item_number1=13&payer_id=HXP6W6WEYQEZQ&tax=0.00&payment_date=08%3A15%3A45+Sep+20%2C+2015+PDT&payment_status=Pending&charset=utf-8&mc_shipping=0.00&mc_handling=0.00&first_name=test&mc_fee=13.35&notify_version=3.8&custom=165279%40yahoo.com%2C+123%2C+%1A%1A%1A%2C+%1A%1A%1A%1A%1A99%1A17%1A18%1A2%1A%2C+%2B886926639369&payer_status=verified&business=heyimariel-facilitator%40gmail.com&num_cart_items=1&mc_handling1=0.00&payer_email=heyimariel-buyer%40gmail.com&verify_sign=AL9LFgxjI.OrpMTqYYIkTdd5dhKZAaN-jJeLqxBQN0-3zTK3D2bl4Jk0&mc_shipping1=0.00&tax1=0.00&txn_id=9JK32438YV407244W&payment_type=instant&last_name=buyer&item_name1=Brownbear+%28%1A%29&receiver_email=heyimariel-facilitator%40gmail.com&payment_fee=13.35&quantity1=1&receiver_id=FK6SJV94AW8VC&pending_reason=paymentreview&txn_type=cart&mc_gross_1=450.00&mc_currency=USD&residence_country=US&test_ipn=1&transaction_subject=165279%40yahoo.com%2C+123%2C+%1A%1A%1A%2C+%1A%1A%1A%1A%1A99%1A17%1A18%1A2%1A%2C+%2B886926639369&payment_gross=450.00&merchant_return_link=%E7%82%B9%E5%87%BB%E6%AD%A4%E5%A4%84&auth=ABRP1MKmvZjlFL5P0qWDmvLlizdvGznyDYCcjq8Aw7W0Psxci5lW4yyrWLlr0uYMQdhvD1oErDv9byJKv7.gR3g
+[2015-09-20 23:15 Asia/Taipei] HTTP response of validation request: HTTP/1.1 100 Continue
+
+HTTP/1.1 200 OK
+Date: Sun, 20 Sep 2015 15:15:57 GMT
+Server: Apache
+X-Frame-Options: SAMEORIGIN
+Set-Cookie: c9MWDuvPtT9GIMyPc3jwol1VSlO=FrvqdAU_2_0FunIcJQej8du3X_t5r-Cq2_zGA7CRDxB3A9xuhd8u_etwXOeLouepTH5uOiYqykjHc6wnWKkBNahJSDhuTC3T67JBebXsawmOjb4UL14Ypj4EnRes1QsyuDYBIHrQr3SKtAIPU1x1zqExR9KyyOS2_It-t1Is7hktMLV9eRDibITZHl3-p0SYDxSbY68wGTfDSSkOwloarhKfIsuQyon-KO86v2PqDi8yl2TH9B6x38Dsmzjuu0QznYtZ7vXUUxTGVzIXxGK4U1LEKubd6N3vdhmBU5ZpFdwU0in2fuRpAmmjOV_GRUFS6d_hIrJuCZt5eU-6MvsqQ7QURfDnAx1LTptEPCscm-8tSGk4Wmw3gehO-gaoAiuI-Ej1H-NVH3kB5ze6OQKTlFa9qKRpJOe20m981s7QNJMEmprzQOdgpFXd0HG; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: cookie_check=yes; expires=Wed, 17-Sep-2025 15:15:57 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navcmd=_notify-validate; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navlns=0.0; expires=Tue, 19-Sep-2017 15:15:57 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: Apache=10.72.108.11.1442762157407181; path=/; expires=Tue, 12-Sep-45 15:15:57 GMT
+Vary: Accept-Encoding,User-Agent
+Connection: close
+Paypal-Debug-Id: 6b1e7aa55e276
+Set-Cookie: X-PP-SILOVER=name%3DSANDBOX3.WEB.1%26silo_version%3D880%26app%3Dappdispatcher%26TIME%3D2915958357; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT
+Set-Cookie: Apache=10.72.128.11.1442762157385385; path=/; expires=Tue, 12-Sep-45 15:15:57 GMT
+Strict-Transport-Security: max-age=14400
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=UTF-8
+
+INVALID
+[2015-09-20 23:15 Asia/Taipei] Invalid IPN: cmd=_notify-validate&mc_gross=450.00&protection_eligibility=Ineligible&item_number1=13&payer_id=HXP6W6WEYQEZQ&tax=0.00&payment_date=08%3A15%3A45+Sep+20%2C+2015+PDT&payment_status=Pending&charset=utf-8&mc_shipping=0.00&mc_handling=0.00&first_name=test&mc_fee=13.35&notify_version=3.8&custom=165279%40yahoo.com%2C+123%2C+%1A%1A%1A%2C+%1A%1A%1A%1A%1A99%1A17%1A18%1A2%1A%2C+%2B886926639369&payer_status=verified&business=heyimariel-facilitator%40gmail.com&num_cart_items=1&mc_handling1=0.00&payer_email=heyimariel-buyer%40gmail.com&verify_sign=AL9LFgxjI.OrpMTqYYIkTdd5dhKZAaN-jJeLqxBQN0-3zTK3D2bl4Jk0&mc_shipping1=0.00&tax1=0.00&txn_id=9JK32438YV407244W&payment_type=instant&last_name=buyer&item_name1=Brownbear+%28%1A%29&receiver_email=heyimariel-facilitator%40gmail.com&payment_fee=13.35&quantity1=1&receiver_id=FK6SJV94AW8VC&pending_reason=paymentreview&txn_type=cart&mc_gross_1=450.00&mc_currency=USD&residence_country=US&test_ipn=1&transaction_subject=165279%40yahoo.com%2C+123%2C+%1A%1A%1A%2C+%1A%1A%1A%1A%1A99%1A17%1A18%1A2%1A%2C+%2B886926639369&payment_gross=450.00&merchant_return_link=%E7%82%B9%E5%87%BB%E6%AD%A4%E5%A4%84&auth=ABRP1MKmvZjlFL5P0qWDmvLlizdvGznyDYCcjq8Aw7W0Psxci5lW4yyrWLlr0uYMQdhvD1oErDv9byJKv7.gR3g
+[2015-09-20 23:16 Asia/Taipei] HTTP request of validation request:POST /cgi-bin/webscr HTTP/1.1
+Host: www.sandbox.paypal.com
+Accept: */*
+Connection: Close
+Content-Length: 1162
+Content-Type: application/x-www-form-urlencoded
+Expect: 100-continue
+
+ for IPN payload: cmd=_notify-validate&mc_gross=450.00&protection_eligibility=Ineligible&item_number1=13&payer_id=HXP6W6WEYQEZQ&tax=0.00&payment_date=08%3A15%3A45+Sep+20%2C+2015+PDT&payment_status=Pending&charset=utf-8&mc_shipping=0.00&mc_handling=0.00&first_name=test&mc_fee=13.35&notify_version=3.8&custom=165279%40yahoo.com%2C+123%2C+%1A%1A%1A%2C+%1A%1A%1A%1A%1A99%1A17%1A18%1A2%1A%2C+%2B886926639369&payer_status=verified&business=heyimariel-facilitator%40gmail.com&num_cart_items=1&mc_handling1=0.00&payer_email=heyimariel-buyer%40gmail.com&verify_sign=AL9LFgxjI.OrpMTqYYIkTdd5dhKZAaN-jJeLqxBQN0-3zTK3D2bl4Jk0&mc_shipping1=0.00&tax1=0.00&txn_id=9JK32438YV407244W&payment_type=instant&last_name=buyer&item_name1=Brownbear+%28%1A%29&receiver_email=heyimariel-facilitator%40gmail.com&payment_fee=13.35&quantity1=1&receiver_id=FK6SJV94AW8VC&pending_reason=paymentreview&txn_type=cart&mc_gross_1=450.00&mc_currency=USD&residence_country=US&test_ipn=1&transaction_subject=165279%40yahoo.com%2C+123%2C+%1A%1A%1A%2C+%1A%1A%1A%1A%1A99%1A17%1A18%1A2%1A%2C+%2B886926639369&payment_gross=450.00&auth=ABRP1MKmvZjlFL5P0qWDmvLlizdvGznyDYCcjq8Aw7W0Psxci5lW4yyrWLlr0uYMQdhvD1oErDv9byJKv7.gR3g
+[2015-09-20 23:16 Asia/Taipei] HTTP response of validation request: HTTP/1.1 100 Continue
+
+HTTP/1.1 200 OK
+Date: Sun, 20 Sep 2015 15:15:59 GMT
+Server: Apache
+X-Frame-Options: SAMEORIGIN
+Set-Cookie: c9MWDuvPtT9GIMyPc3jwol1VSlO=8C_1xQutzmCUW0mtv9jfB4azPNASsxDGjxCYYwh6ad-4qGM0MHzwgV4qyc1tuWmn99w-xW0VR7WhXWAnDoNPLGVZSxk08HXYq248mj3qsf1aKTCn1fbQgw1FclLyoB98ebjR-vBhU_7pX-ThbHlDs08fI3OcC9cdiaeec6uAFZuhXrsHVh2pcELFtf9w_5R3W7LFzEbddyn5dA_bdixUC7hlIajV_IGFNvzGIM_yK-Vpvu8bhhDAWW2Oz7r4mTWVHe1yz866EzmB_pTWZuRH1FX1WXFgqlcekQycSrEf05zbcdoAPO0yWOwVAzvlduGO5Asy3ZmegI2kDRJgAk0s59QC0ve6JADYmmC9kOXbZSE9C3sTkcNtG8kkZcwI2LEPdMgtwNaV5uV75gs9ZNq5TAYjnJDOSWU818OC7Vz5qAb2PFH9PQ4SGQ7SwE8; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: cookie_check=yes; expires=Wed, 17-Sep-2025 15:16:00 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navcmd=_notify-validate; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navlns=0.0; expires=Tue, 19-Sep-2017 15:16:00 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: Apache=10.72.108.11.1442762159749905; path=/; expires=Tue, 12-Sep-45 15:15:59 GMT
+Vary: Accept-Encoding,User-Agent
+Connection: close
+Paypal-Debug-Id: c2ff7383b1caf
+Set-Cookie: X-PP-SILOVER=name%3DSANDBOX3.WEB.1%26silo_version%3D880%26app%3Dappdispatcher%26TIME%3D2949512789; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT
+Set-Cookie: Apache=10.72.128.11.1442762159727953; path=/; expires=Tue, 12-Sep-45 15:15:59 GMT
+Strict-Transport-Security: max-age=14400
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=UTF-8
+
+INVALID
+[2015-09-20 23:16 Asia/Taipei] Invalid IPN: cmd=_notify-validate&mc_gross=450.00&protection_eligibility=Ineligible&item_number1=13&payer_id=HXP6W6WEYQEZQ&tax=0.00&payment_date=08%3A15%3A45+Sep+20%2C+2015+PDT&payment_status=Pending&charset=utf-8&mc_shipping=0.00&mc_handling=0.00&first_name=test&mc_fee=13.35&notify_version=3.8&custom=165279%40yahoo.com%2C+123%2C+%1A%1A%1A%2C+%1A%1A%1A%1A%1A99%1A17%1A18%1A2%1A%2C+%2B886926639369&payer_status=verified&business=heyimariel-facilitator%40gmail.com&num_cart_items=1&mc_handling1=0.00&payer_email=heyimariel-buyer%40gmail.com&verify_sign=AL9LFgxjI.OrpMTqYYIkTdd5dhKZAaN-jJeLqxBQN0-3zTK3D2bl4Jk0&mc_shipping1=0.00&tax1=0.00&txn_id=9JK32438YV407244W&payment_type=instant&last_name=buyer&item_name1=Brownbear+%28%1A%29&receiver_email=heyimariel-facilitator%40gmail.com&payment_fee=13.35&quantity1=1&receiver_id=FK6SJV94AW8VC&pending_reason=paymentreview&txn_type=cart&mc_gross_1=450.00&mc_currency=USD&residence_country=US&test_ipn=1&transaction_subject=165279%40yahoo.com%2C+123%2C+%1A%1A%1A%2C+%1A%1A%1A%1A%1A99%1A17%1A18%1A2%1A%2C+%2B886926639369&payment_gross=450.00&auth=ABRP1MKmvZjlFL5P0qWDmvLlizdvGznyDYCcjq8Aw7W0Psxci5lW4yyrWLlr0uYMQdhvD1oErDv9byJKv7.gR3g

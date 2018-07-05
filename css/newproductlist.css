@@ -1,0 +1,290 @@
+.wrapper {
+    width: 100%;
+    height: 100%;
+    font-size: 100%;
+    position: absolute;
+    box-sizing: border-box;
+}
+.wrapper .newcontentL{
+    padding-top: 80px;
+    padding-bottom: 80px;
+    padding-right: 140px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    /*background: url(../images/index_bg_outer.jpg);*/
+    /*background-size: cover;*/
+    overflow: hidden;
+    /*background-color: #333;*/
+}
+/*---------------------outerFrame_bgMove-------------------------*/
+.wrapper .newcontentL .outerFrame{
+    width: 105%;
+    height: 105%;
+    background-size: cover;
+    position: absolute;
+    left: -5px;
+    top: -5px;
+    background: url("../images/index_bg_outer.jpg") no-repeat;
+    z-index: -1;
+}
+/*---------------------newTopL-------------------------*/
+.wrapper .newcontentL .newtopL{
+    font-size:2rem;
+    /*padding-top: 20px;*/
+    margin:auto;
+    width: 80%;
+    /*height: 5%;*/
+    /*background-color: #3d5685;*/
+}
+/*---------------------newbottomL-------------------------*/
+.wrapper .newcontentL .newbottomL{
+    margin:auto;
+    width: 80%;
+    height: 95%;
+    /*background-color: #844285;*/
+    border-bottom:1px solid #000 ;
+    border-top:1px solid #000;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-right: 15px;
+    padding-left: 15px;
+
+
+}
+/*------------------商品Ulli---------------------*/
+.wrapper .newcontentL .newbottomL .newmerchandise{
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    /*background-color: #844285;*/
+}
+.wrapper .newcontentL .newbottomL .newmerchandise > li{
+    margin: .4% .5%;
+    width: 24%;
+    height: 33%;
+    position:relative;
+    float: left;
+    overflow: hidden;
+    border:1px solid rgba(11, 0, 0, 0.28);
+    line-height: 0;
+    /*border:1px solid #000;*/
+    /*outline: 1px solid rgba(70, 70, 70, 0.47);*/
+    /*cursor: pointer;*/
+}
+.wrapper .newcontentL .newbottomL .newmerchandise li a img {
+    width: 100%;
+    height: auto;
+}
+/*--------------------------價格.WISH連結---------------------------*/
+.wrapper .newcontentL .newbottomL .newmerchandise .wish_link{
+    padding: 5%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: .8s;
+    opacity: 0;
+
+}
+.wrapper .newcontentL .newbottomL .newmerchandise .wish_link i{
+     font-size: 2rem;
+    transition: .3s;
+    color: #000;
+ }
+.wrapper .newcontentL .newbottomL .newmerchandise .NT{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    padding: 5%;
+    font-size: 1rem;
+    transition: 1.5s;
+    pointer-events: none;
+    opacity: 0;
+    color: #000;
+}
+
+
+/*-------------------白色半透明---------------------*/
+.wrapper .newcontentL .newbottomL .newmerchandise li .newmerchandisesub{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255,.8);
+    display: block;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size:contain;
+    transition: 1.2s;
+    margin: auto;
+    pointer-events: none;
+    /*background: url("../picii/1.png") 50% 50% no-repeat rgba(255, 255, 255,.8);*/
+    /*background-size: contain;*/
+}
+/*-------------------------貼紙置中---------------------------*/
+.wrapper .newcontentL .newbottomL .newmerchandise li .newmerchandisesub .sss{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    margin: auto;
+    /*background-color: #122b40;*/
+    pointer-events: none;
+}
+.wrapper .newcontentL .newbottomL .newmerchandise li .newmerchandisesub .sss img{
+    width: 100%;
+    height:100%;
+}
+/*------------------------畫框------------------------*/
+.imgtopline{
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #000;
+    left: 100%;
+    top: 0;
+    /*transition:.4s 0s;*/
+}
+.imgbottomlone{
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #000;
+    right: 100%;
+    bottom: 0;
+    /*transition:.4s .4s;*/
+}
+.imgleftline{
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    background-color: #000;
+    bottom:100%;
+    left:0;
+    /*transition:.4s .8s;*/
+}
+.imgrightline{
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    background-color: #000;
+    top: 100%;
+    right:0;
+    /*transition:.4s 0s;*/
+}
+.wrapper .newcontentL .newbottomL .newmerchandise > li:hover .imgtopline{
+    left: 0;
+    transition:.4s 0s;
+}
+.wrapper .newcontentL .newbottomL .newmerchandise > li:hover .imgbottomlone{
+    right: 0;
+    transition:.4s .7s;
+}
+.wrapper .newcontentL .newbottomL .newmerchandise > li:hover .imgleftline{
+    bottom: 0;
+    transition:.4s .35s;
+}
+.wrapper .newcontentL .newbottomL .newmerchandise > li:hover .imgrightline{
+    top: 0;
+    transition:.4s 1.05s;
+}
+.wrapper .newcontentL .newbottomL .newmerchandise > li:hover .newmerchandisesub{
+    opacity: 0;
+    transition: 1.2s;
+}
+.wrapper .newcontentL .newbottomL .newmerchandise > li:hover .wish_link{
+    opacity: 1;
+    transition: .3s;
+}
+.wrapper .newcontentL .newbottomL .newmerchandise > li a:hover i{
+    transition: .3s;
+    color: rgba(32, 32, 32, 0.64);
+}
+.wrapper .newcontentL .newbottomL .newmerchandise > li:hover .NT{
+    opacity: 1 ;
+    transition: .3s;
+}
+
+
+
+
+/*-----------------------@media---------------------------*/
+@media screen and (min-width: 768px) and (max-width: 1200px){
+    /*--------------------------價格.WISH連結---------------------------*/
+    .wrapper .newcontentL .newbottomL .newmerchandise .wish_link{
+        padding: 3%;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    .wrapper .newcontentL .newbottomL .newmerchandise .wish_link i{
+        font-size: 1.4rem;
+    }
+    .wrapper .newcontentL .newbottomL .newmerchandise .NT{
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        padding: 5%;
+        font-size: 1rem;
+    }
+}
+
+
+
+@media screen and (max-width: 767px) {
+    .wrapper .newcontentL{
+        padding-top: 70px;
+        padding-bottom: 80px;
+        padding-right: 0;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        /*background: url("../images/index_bg.jpg") 0 0 no-repeat;*/
+        background-size: cover;
+        /*background-color: #a00;*/
+    }
+    /*---------------------newTopL-------------------------*/
+    .wrapper .newcontentL .newtopL{
+        font-size:1.4rem;
+        padding-top: 10px;
+        /*padding-top: 20px;*/
+        margin:auto;
+        width: 80%;
+        /*height: 5%;*/
+        /*background-color: #3d5685;*/
+    }
+    .wrapper .newcontentL .newbottomL .newmerchandise > li{
+        margin: 5% 0 0;
+        width: 100%;
+        height: 50%;
+        position:relative;
+        float: left;
+        overflow: hidden;
+        border:1px solid #000;
+        cursor: pointer;
+    }
+    /*--------------------------價格.WISH連結---------------------------*/
+    .wrapper .newcontentL .newbottomL .newmerchandise .wish_link{
+        padding: 5%;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    .wrapper .newcontentL .newbottomL .newmerchandise .wish_link i{
+        font-size: 2rem;
+
+    }
+
+    .wrapper .newcontentL .newbottomL .newmerchandise .NT{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        padding: 5%;
+        font-size: 1rem;
+    }
+}
+

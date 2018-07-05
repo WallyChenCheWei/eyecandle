@@ -1,0 +1,264 @@
+.contentL{
+    perspective: 1000px;
+}
+.linkProduct{
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+}
+.outerFrameW, .outerFrameB{
+    width: 105%;
+    height: 105%;
+    background-size: cover;
+    position: absolute;
+    left: -5px;
+    top: -5px;
+}
+.outerFrameB{
+    background: url("../images/index_bg_b.jpg") no-repeat;
+    animation: hideBackground 3s 1.5s linear forwards;
+}
+.outerFrameW{
+    opacity: 0;
+    background: url("../images/index_bg_outer.jpg") no-repeat;
+    animation: showBackground 2s 0s linear forwards;
+}
+.middleFrame{
+    width: 48%;
+    height: 52%;
+    background: url("../images/index_bg_middle.png");
+    border: 1px solid #c8c8c8;
+    position: absolute;
+    top: 25%;
+    left: 15%;
+    background-size: auto;
+    opacity: 0;
+    animation: showBackground 2s 3s linear forwards;
+}
+.innerFrame{
+    width: 48%;
+    height: 52%;
+    background-color: rgba(255,255,255,.6);
+    border: 1px solid #231916;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    opacity: 0;
+    animation: showBackground 2s 3s linear forwards;
+}
+.innerFrame:after{
+    content: '';
+    width: 25%;
+    height: 1px;
+    background-color: #231916;
+    transform: rotate(-35deg);
+    position: absolute;
+    right: -75px;
+    bottom: 25px;
+}
+.objTitle{
+    width: 16%;
+    height: 14%;
+    border-left: 1px solid #231916;
+    position: absolute;
+    top: 15%;
+    left: 12%;
+    z-index: 1;
+    opacity: 0;
+    text-indent: -9999px;
+    animation: showTitle 1s 3.3s linear forwards;
+}
+.objTitle img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+    padding-left: 30px;
+}
+.circleLabel{
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+}
+.circleLabel img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+}
+
+
+/*------------------------------------logo animate-----------------------------------*/
+.mainLogo{
+    font-size: 100px;
+    position: absolute;
+    left: 40%;
+    top: 50%;
+    transform: scale(1,1);
+    animation: logoMove 1s 1.5s cubic-bezier(.56,.01,.41,.99) forwards;
+}
+.box{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin:auto;
+    width: 146.88px;
+    height: 222.84px;
+}
+.a01{
+    position: absolute;
+    top: 0;
+    bottom:0;
+    left: 0;
+    right: 0;
+    margin:auto;
+    background: #fff;
+    animation: a01 2s forwards;
+}
+@keyframes a01{
+    0%{-webkit-shape-outside: polygon(0.125px 0px, 0px 0px, 0.09px 0.152px, 0.229px 0.152px, 0.229px 0.152px, 0.229px 0.152px, 0.229px 0.152px, 0.229px 0.152px);-webkit-clip-path:polygon(0.125px 0px, 0px 0px, 0.09px 0.152px, 0.229px 0.152px, 0.229px 0.152px, 0.229px 0.152px, 0.229px 0.152px, 0.229px 0.152px);}
+    10%{-webkit-shape-outside: polygon(0.125px 0px, 0px 0px, 9.882px 17.357px, 10.021px 17.357px, 10.021px 17.357px, 10.021px 17.357px, 10.021px 17.357px, 10.021px 17.357px);-webkit-clip-path:polygon(0.125px 0px, 0px 0px, 9.882px 17.357px, 10.021px 17.357px, 10.021px 17.357px, 10.021px 17.357px, 10.021px 17.357px, 10.021px 17.357px);}
+    30%{-webkit-shape-outside: polygon(146.879px 0px, 0px 0px, 9.882px 17.357px, 117.007px 17.357px, 117.007px 17.357px, 117.007px 17.357px, 117.007px 17.357px, 137.168px 17.357px);-webkit-clip-path:polygon(146.879px 0px, 0px 0px, 9.882px 17.357px, 117.007px 17.357px, 117.007px 17.357px, 117.007px 17.357px, 117.007px 17.357px, 137.168px 17.357px);}
+    40%{-webkit-shape-outside: polygon(146.879px 0px, 0px 0px, 9.882px 17.357px, 117.007px 17.357px, 73.413px 93.876px, 73.413px 93.876px, 63.434px 111.42px, 73.413px 128.948px);-webkit-clip-path:polygon(146.879px 0px, 0px 0px, 9.882px 17.357px, 117.007px 17.357px, 73.413px 93.876px, 73.413px 93.876px, 63.434px 111.42px, 73.413px 128.948px);}
+    45%{-webkit-shape-outside: polygon(146.879px 0px, 0px 0px, 9.881px 17.357px, 117.007px 17.357px, 73.413px 93.876px, 19.947px 0px, 0px 0px, 73.413px 128.948px);-webkit-clip-path:polygon(146.879px 0px, 0px 0px, 9.881px 17.357px, 117.007px 17.357px, 73.413px 93.876px, 19.947px 0px, 0px 0px, 73.413px 128.948px);background: #fff;}
+    75%{-webkit-shape-outside: polygon(146.879px 0px, 0px 0px, 9.881px 17.357px, 117.007px 17.357px, 73.413px 93.876px, 19.947px 0px, 0px 0px, 73.413px 128.948px);-webkit-clip-path:polygon(146.879px 0px, 0px 0px, 9.881px 17.357px, 117.007px 17.357px, 73.413px 93.876px, 19.947px 0px, 0px 0px, 73.413px 128.948px);background: #fff;}
+    100%{
+        -webkit-shape-outside: polygon(146.879px 0px, 0px 0px, 9.881px 17.357px, 117.007px 17.357px, 73.413px 93.876px, 19.947px 0px, 0px 0px, 73.413px 128.948px);-webkit-clip-path:polygon(146.879px 0px, 0px 0px, 9.881px 17.357px, 117.007px 17.357px, 73.413px 93.876px, 19.947px 0px, 0px 0px, 73.413px 128.948px);background: #231916;
+    }
+}
+.a02{
+    transform:translate(-0.4px, 0) scale(-1);
+    position: absolute;
+    top: 0;
+    bottom:0;
+    left: 0;
+    right: 0;
+    margin:auto;
+    background: #fff;
+    animation: a01 2s forwards;
+}
+.a05{
+    position:absolute;
+    float:left;
+    z-index:10;
+    animation: a05 0.9s 0.45s forwards;
+}
+@keyframes a05{
+    0%{transform:translate(0px, 0px);}
+    100%{transform:translate(126.45px, 0px);}
+}
+.a04{
+    position:absolute;
+    z-index:1;
+    animation: a04 0.9s 0.45s forwards;
+}
+@keyframes a04{
+    0%{transform:translate(0px, 0px);}
+    100%{transform:translate(-126.45px, 0px);}
+}
+.eRight path, .eLeft path {
+    fill: none;
+    stroke: #fff;
+    stroke-width: 1;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-miterlimit: 10;
+    animation: draw01 2s 0.3s forwards;
+}
+@keyframes draw01{
+    0%{stroke-dashoffset: 550;}
+    50%{stroke-dashoffset: 0; fill:#fff; stroke-width:0;}
+    100%{stroke-dashoffset: 0; fill:#231916; stroke-width:0;}
+}
+.logoM path{
+    fill: none;
+    stroke: #fff;
+    stroke-width: 1;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-miterlimit: 10;
+    animation: draw02 2.5s forwards;
+}
+@keyframes draw02{
+    0%{stroke-dashoffset: 1200;}
+    100%{stroke-dashoffset: 0;stroke-width:0;}
+}
+.a07{
+    /*padding-top:32.56px;*/
+    width: 148px;
+    animation: a07 1s forwards;
+    overflow:hidden;
+}
+@keyframes a07{
+    0%{height:0;}
+    100%{height:102px;}
+}
+.logoName path{
+    fill: none;
+    stroke: #fff;
+    stroke-width: 1;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-miterlimit: 10;
+    animation: draw03 2.3s  forwards;
+}
+@keyframes draw03{
+    0%{stroke-dashoffset: 200;}
+    20%{fill:none;}
+    62%{stroke-dashoffset: 0;stroke-width:0; fill:#fff;}
+    100%{stroke-dashoffset: 0;stroke-width:0; fill:#231916;}
+}
+
+/*----------------------------------background animate------------------------------*/
+
+@keyframes hideBackground{
+    0%{opacity:1;}
+    100%{opacity:0;}
+}
+@keyframes showBackground{
+    0{ opacity:0; }
+    100%{ opacity:1; }
+}
+@keyframes showTitle{
+    0{ opacity:0; left: 11%;}
+    100%{ opacity:1; left: 13%;}
+}
+@keyframes logoMove{
+	0{ transform: scale(1,1); top: 50%; left: 50%;}
+	100%{ transform: scale(.8,.8); top: 45%; left: 35%;}
+}
+/*-------------------------------------rwd------------------------------------------*/
+@media screen and (min-width: 768px) and (max-width: 1200px){
+    .circleLabel{
+        transform: scale(.7,.7);
+    }
+    .innerFrame:after{
+        display: none;
+    }
+}
+@media screen and (max-width: 767px) {
+    .objTitle, .circleLabel, .innerFrame:after{
+        display: none;
+    }
+    .middleFrame, .innerFrame{
+       display: none;
+    }
+    .mainLogo{
+        transform: scale(.5,.5);
+        top: 45%; left: 38%;
+    }
+    @keyframes logoMove{
+        0{ transform: scale(.5,.5); top: 45%; left: 38%;}
+        100%{ transform: scale(.5,.5); top: 45%; left: 38%;}
+    }
+}

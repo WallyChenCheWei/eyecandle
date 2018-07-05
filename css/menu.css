@@ -1,0 +1,395 @@
+.menu{
+    width: 140px;
+    height: 100%;
+    background-color: #111;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 10;
+    transition: all 1s cubic-bezier(.56,.01,.41,.99);
+}
+.block{
+    width: 140px;
+    height: 100%;
+    background-color: #111;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 10;
+}
+.logo{
+    width: 65px;
+    height: 81px;
+    background-image: url("../images/logo.png");
+    position: absolute;
+    top: 10%;
+    right: 25%;
+    z-index: 11;
+    transition: all 1s cubic-bezier(.56,.01,.41,.99);
+}
+.logoMove{
+    right: 48%;
+}
+.sandwitch{
+    width: 40px;
+    height: 40px;
+    border: 1px solid #777;
+    position:absolute;
+    cursor: pointer;
+    right: 50px;
+    top: 30%;
+    z-index: 11;
+    transition: all .6s;
+}
+.sandwitch:hover {
+    border-color: #ddd;
+}
+.sandwitch:hover .bar{
+    background-color: #fff;
+}
+.sandwitch:hover .barTop{
+    background-color: #fff;
+}
+.sandwitch:hover .barBottom{
+    background-color: #fff;
+}
+.bar, .barTop, .barBottom{
+    width: 20px;
+    height: 2px;
+    background-color: #aaa;
+    position:absolute;
+    left: 10px;
+    top: 50%;
+    transition: all .3s;
+}
+.barTop, .barBottom{
+    transform-origin:left center;
+    transition: all .6s;
+}
+.barTop{
+    top: 30%;
+}
+.barBottom{
+    top: 70%;
+}
+.barTransparent{
+    opacity: 0;
+}
+.barTurnDown{
+    top: 33%;
+    left: 15px;
+    width: 16px;
+    transform: rotate(25deg);
+}
+.barTurnUp{
+    top: 67%;
+    left: 15px;
+    width: 16px;
+    transform: rotate(-25deg);
+}
+.menuMove{
+    width: 100%;
+    /*opacity: .9;*/
+}
+.subMenuUser{
+    position: absolute;
+    font-size: 24px;
+    right: 58px;
+    bottom: 18%;
+    z-index: 11;
+}
+.subMenuUser .userBtn{
+    margin: 40px 0;
+}
+.subMenuUser .userBtn i{
+    color: #777;
+    transition: all .6s;
+}
+.subMenuUser .userBtn i:hover{
+    color:#fff;
+}
+.subMenuUser .userBtn .menuBtnActive{
+    opacity: 0.2;
+    pointer-events: none;
+}
+.subMenuUser .userBtn .UserBtnActive i{
+    color: #ffd88a;
+}
+.subMenu{
+    width: 900px;
+    height: 280px;
+    margin: 17% auto 0 auto;
+    padding-top: 20px;
+    z-index: 9;
+    border-top: 1px solid #333;
+    font-size: 0;
+    position: relative;
+    right: -1000px;
+    opacity: 0;
+    transition: all 1s cubic-bezier(.56,.01,.41,.99);
+}
+.subMenuShow{
+    right: 0;
+    opacity: 1;
+}
+.subMenu .list{
+    width: 200px;
+    height: 60px;
+    position: relative;
+    display: inline-block;
+    margin: 10px;
+    text-align:center;
+    font-size: 24px;
+    line-height: 60px;
+    color:#777;
+}
+.subMenu .list .btnMain{
+    display: block;
+    width: 200px;
+    height: 60px;
+    position:absolute;
+    overflow:hidden;
+    text-align:center;
+    font-size: 24px;
+    line-height: 60px;
+    color:#777;
+    transition: .6s;
+}
+.btnTopLine{
+    width: 200px;
+    height: 1px;
+    background-color:#fff;
+    position:absolute;
+    left: 200px;
+    top: 0;
+    transition:all .2s linear .6s;
+}
+.btnRightLine{
+    width: 1px;
+    height: 60px;
+    background-color:#fff;
+    position:absolute;
+    left: 199px;
+    top: 60px;
+    transition:all .2s linear 0s;
+}
+.btnBottomLine{
+    width: 200px;
+    height: 1px;
+    background-color:#fff;
+    position:absolute;
+    left: -200px;
+    top: 59px;
+    transition:all .2s linear .2s;
+}
+.btnLeftLine{
+    width: 1px;
+    height: 60px;
+    background-color:#fff;
+    position:absolute;
+    left: 0;
+    top: -60px;
+    transition:all .2s linear .4s;
+}
+.list:hover .btnMain .btnTopLine{
+    left: 0;
+    transition:all .2s linear 0s;
+}
+.list:hover .btnMain .btnRightLine{
+    top: 0;
+    transition:all .2s linear .6s;
+}
+.list:hover .btnMain .btnBottomLine{
+    left: 0;
+    transition:all .2s linear .4s;
+}
+.list:hover .btnMain .btnLeftLine{
+    top: 0;
+    transition:all .2s linear .2s;
+}
+.list:hover .btnMain{
+    color: #fff;
+}
+.social{
+    width: 900px;
+    height: 80px;
+    padding-top: 20px;
+    margin: auto;
+    z-index: 9;
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+    font-size: 0;
+    position: relative;
+    right: -1000px;
+    opacity: 0;
+    transition: all 1s cubic-bezier(.56,.01,.41,.99);
+}
+.social li{
+    width: 20%;
+    height: 30px;
+    display: inline-block;
+    font-size: 24px;
+    text-align: center;
+    line-height: 30px;
+}
+.social li i{
+    color: #777;
+    transition: all .6s;
+}
+.social li i:hover{
+    color: #fff;
+}
+.socialShow{
+    right: 0;
+    opacity: 1;
+}
+.alreadyBuy{
+    position: absolute;
+    right: 95px;
+    bottom: 75%;
+    width: 300px;
+    height: 45px;
+    background-color: #ea7d10;
+    color: #fff;
+    font-size: 1rem;
+    text-align: center;
+    line-height: 45px;
+    z-index: 999;
+    display: none;
+}
+.alreadyBuy:after{
+    content: '';
+    position: absolute;
+    left: 300px;
+    top: 12px;
+    border-top: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid #ea7d10;
+}
+@media screen and (min-width: 768px) and (max-width: 1200px){
+    .wrapper .subMenuUser{
+        bottom: 10%;
+    }
+    .wrapper .menu .subMenu{
+        /*width: 600px;*/
+        width: 550px;
+        margin: 30% auto 0 auto;
+    }
+    .wrapper .menu .subMenu .list{
+        /*width: 180px;*/
+        width: 160px;
+        height: 50px;
+        outline: 1px solid #333;
+        margin: 5px;
+    }
+    .wrapper .menu .subMenu .list .btnMain{
+        /*width: 180px;*/
+        width: 160px;
+        height: 50px;
+        line-height: 50px;
+    }
+    .btnTopLine, .btnRightLine, .btnBottomLine, .btnLeftLine{
+        display: none;
+    }
+    .wrapper .menu .social{
+        width: 550px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .wrapper .menu {
+        width: 100%;
+        height: 50px;
+        border-bottom: 1px solid #000;
+    }
+    .wrapper .menu .logo {
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        position: absolute;
+        width: 65px;
+        height: 41px;
+        background: url(../images/logo_s.png);
+        line-height: 60px;
+        transform: scale(.7,.7);
+    }
+    .wrapper .menu .block{
+        width: 100%;
+        height: 50px;
+    }
+    .wrapper .menu .sandwitch{
+        left: 5px;
+        top: 5px;
+        transform: scale(.7,.7);
+    }
+    .wrapper .menu .subMenu{
+        width: 100%;
+        height: 800px;
+        background-color: #000;
+        padding: 80px;
+        margin: 0;
+    }
+    .wrapper .menu .subMenu .list{
+        display: block;
+        width: 180px;
+        height: 50px;
+        line-height: 50px;
+        border-bottom: 1px solid #333;
+        margin: 0 auto;
+    }
+    .wrapper .menu .subMenu .list .btnMain{
+        width: 180px;
+        height: 50px;
+        font-size: 20px;
+        line-height: 40px;
+    }
+    .btnTopLine, .btnRightLine, .btnBottomLine, .btnLeftLine{
+        display: none;
+    }
+    .wrapper .subMenuUser{
+        width: 100%;
+        height: 45px;
+        background-color: #111;
+        font-size: 0;
+        left: 0;
+        bottom: 0;
+        position: fixed;
+    }
+    .wrapper .subMenuUser .userBtn{
+        width: 25%;
+        height: 45px;
+        display: inline-block;
+        font-size: 24px;
+        text-align: center;
+        line-height: 45px;
+        margin: 0;
+        border-top: 1px solid #333;
+    }
+    .wrapper .menu .social{
+        display: none;
+    }
+    .alreadyBuy{
+        position: absolute;
+        left: 0;
+        bottom: 55px;
+        width: 300px;
+        height: 45px;
+        background-color: #ea7d10;
+        color: #fff;
+        font-size: 1rem;
+        text-align: center;
+        line-height: 45px;
+    }
+    .alreadyBuy:after{
+        content: '';
+        position: absolute;
+        left: 40px;
+        top: 45px;
+        border-top: 10px solid #ea7d10;
+        border-right: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+        border-left: 10px solid transparent;
+    }
+}

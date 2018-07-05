@@ -1,0 +1,38 @@
+@charset "UTF-8"
+.seriesEyenimal{
+		width: 270px;
+		overflow:hidden;
+		animation: grow 0.5s forwards;
+	}
+	@keyframes grow{
+		0%{width: 0;}
+		100%{width: 270px;}
+	}
+	.p1Bg,.r1Sm,.o1Sm,.d1Sm,.u1Sm,.c1Sm,.t1Sm,.s1Bg,.e1Sm,.r2Sm,.i1Sm,.e2Sm,.s2Sm,.line{
+		fill: none;
+    	stroke: #000;
+    	stroke-width: 1;
+    	stroke-linecap: round;
+    	stroke-linejoin: round;
+    	stroke-miterlimit: 10;
+    	animation: draw 3.3s forwards;
+	}
+	@keyframes draw{
+		0%{stroke-dashoffset: 195;}
+		10%{fill:none;}
+		100%{stroke-dashoffset: 0;stroke-width:0; fill:#000;}
+	}
+	.e3Bg,.y1Sm,.e4Sm,.n1Sm,.i2Sm,.m1Sm,.a1Sm,.l1Sm{
+		fill: none;
+    	stroke: #000;
+    	stroke-width: 1;
+    	stroke-linecap: round;
+    	stroke-linejoin: round;
+    	stroke-miterlimit: 10;
+    	animation: draw2 3.3s 1s forwards;
+	}
+	@keyframes draw2{
+		0%{stroke-dashoffset: 195;}
+		10%{fill:none;}
+		100%{stroke-dashoffset: 0;stroke-width:0; fill:#000;}
+	}

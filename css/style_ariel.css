@@ -1,0 +1,233 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+/*--------------------------------new----------------------------*/
+@font-face{
+  font-family:'NotoSansCJKtc-Thin';
+  src:url(fonts/NotoSansCJKtc-Thin.otf);
+}
+
+html {
+  line-height: 1;
+  /*font-family: 'Amiri', serif;*/
+  font-family: 'Crimson Text', serif;
+  /*font-family: 'Halant', serif;*/
+
+}
+/*--------------------------------new----------------------------*/
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+
+  position: absolute;
+}
+.wrapper a {
+  text-decoration: none;
+}
+.wrapper .contentL {
+  position: relative;
+  box-sizing: border-box;
+}
+.wrapper .index {
+  right: 0;
+}
+.wrapper .index img {
+  width: 100%;
+}
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.wrapper .landing {
+  margin-right: 0;
+  background-color: #000000;
+  animation: blink 4s;
+}
+.wrapper .contentR {
+  height: 100%;
+  position: fixed;
+  right: 0;
+  top: 0;
+  color: #fff;
+  z-index: 10;
+}
+.wrapper .contentR a {
+  color: #fff;
+}
+.wrapper .contentR .menuR {
+  box-sizing: border-box;
+  padding: 60px 0;
+  background-color: #222;
+  height: inherit;
+  float: right;
+  width: 140px;
+  position: relative;
+  z-index: 8;
+}
+.wrapper .contentR .menuR .logo {
+  margin: auto;
+  width: 82px;
+  height: 52px;
+  background: url(../images/logo.png);
+}
+.wrapper .contentR .menuR ul {
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  font-size: 2rem;
+  text-align: center;
+  padding-top: 50px;
+}
+.wrapper .contentR .menuR ul li {
+  margin: 20px 0;
+}
+.wrapper .contentR .menuR ul.social {
+  position: absolute;
+  margin: auto;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+}
+.wrapper .contentR .menuR ul.social li {
+  margin: 0;
+}
+.wrapper .contentR .menuSub {
+  background-color: rgba(0, 0, 0, 0.8);
+  height: inherit;
+  width: 200px;
+  float: right;
+  font-size: 2rem;
+  position: relative;
+  right: -100%;
+  padding-top: 60px;
+  display: none;
+}
+.wrapper .contentR .menuSub ul li {
+  margin-top: 15px;
+}
+.wrapper .contentR .menuSub ul li:before {
+  content: '----';
+  margin-right: 10px;
+}
+.wrapper .contentR .menuSub ul li ul {
+  font-size: 1.5rem;
+}
+.wrapper .contentR .menuSub ul li ul li {
+  margin-top: 0;
+}
+.wrapper .contentR .menuSub ul li ul li:before {
+  content: '---';
+  margin-right: 25px;
+}
+@media screen and (max-width: 767px) {
+  .wrapper .contentL {
+    position: relative;
+    margin-right: 0;
+    padding-top: 60px;
+  }
+  .wrapper .landing {
+    top: 0;
+    background-color: #000000;
+  }
+  .wrapper .contentR {
+    width: 100%;
+    height: 60px;
+  }
+  .wrapper .contentR .menuR {
+    width: 100%;
+    height: 60px;
+    font-size: 0;
+    padding: 0;
+  }
+  .wrapper .contentR .menuR .logo {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 82px;
+    height: 52px;
+    position: absolute;
+    background: url(../images/logo.png);
+    line-height: 60px;
+  }
+  .wrapper .contentR .menuR ul {
+    line-height: 60px;
+    padding-top: 0;
+  }
+  .wrapper .contentR .menuR ul li {
+    display: inline-block;
+    margin: 0;
+  }
+  .wrapper .contentR .menuR ul li i {
+    width: 20px;
+  }
+  .wrapper .contentR .menuR ul li:first-child {
+    margin-right: 10%;
+  }
+  .wrapper .contentR .menuR ul li:nth-child(2) {
+    margin-right: 35%;
+  }
+  .wrapper .contentR .menuR ul li:last-child {
+    margin-left: 10%;
+  }
+  .wrapper .contentR .menuR ul.social {
+    display: none;
+  }
+  .wrapper .contentR .menuSub {
+    height: 1000px;
+  }
+}

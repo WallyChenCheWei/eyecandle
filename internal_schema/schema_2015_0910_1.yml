@@ -1,0 +1,130 @@
+detect_relations: true
+
+options:
+  type: INNODB
+  collate: utf8_general_ci
+  charset: utf8
+
+Admin:
+  actAs: [Timestampable]
+  columns:
+    username:
+      type: string(255)
+      unique: true
+    password: string(100)
+
+User:
+  actAs: [Timestampable]
+  columns:
+    email:
+      type: string(255)
+      unique: true
+      email: true
+    password: string(100)
+    name: string(100)
+    tel: string(50)
+    address: string(255)
+    social: string(255)
+    social_id: string(255)
+    is_active:
+      type: integer(1)
+      default: '1'
+      
+ForgotPassword:
+  actAs: [Timestampable]
+  columns:
+    user_id: integer(4)
+    code: string(255)
+    is_active:
+      type: integer(1)
+      default: '1'
+      
+Collect:
+  actAs: [Timestampable]
+  columns:
+    user_id: integer(4)
+    product_id: integer(4)
+    is_active:
+      type: integer(1)
+      default: '1'
+      
+Cart:
+  actAs: [Timestampable]
+  columns:
+    user_id: integer(4)
+    order_name: string(100)
+    total: integer(10)
+    name: string(255)
+    send_option: string(100)
+    address: string(255)
+    tel: string(50)
+    status: string(50)
+    is_active:
+      type: integer(1)
+      default: '1'
+
+CartList:
+  actAs: [Timestampable]
+  columns:
+    cart_id: integer(4)
+    product_id: integer(4)
+    color_id: integer(4)
+    num: integer(4)
+    total: integer(10)
+    is_active:
+      type: integer(1)
+      default: '1'
+    
+Product:
+  actAs: [Timestampable]
+  columns:
+    name: string(255)
+    cover_sticker: string(255)
+    sticker: string(255)
+    detail: string(255)
+    price: integer(10)
+    weight: string(100)
+    size: string(100)
+    burning: string(100)
+    material: string(100)
+    method: string(255)
+    type_id: integer(4)
+    is_soldout:
+      type: integer(1)
+      default: '0'
+    is_active:
+      type: integer(1)
+      default: '1'
+
+Type:
+  actAs: [Timestampable]
+  columns:
+    name: string(100)
+    banner: string(255)
+    is_active:
+      type: integer(1)
+      default: '1'
+
+Color:
+  actAs: [Timestampable]
+  columns:
+    name: string(100)
+    color_code: string(255)
+    smell: string(255)
+    is_active:
+      type: integer(1)
+      default: '1'
+
+ColorPic:
+  actAs: [Timestampable]
+  columns:
+    product_id: integer(4)
+    color_id: integer(4)
+    small_pic: string(100)
+    big_pic: string(100)
+    is_cover:
+      type: integer(1)
+      default: '0'
+    is_active:
+      type: integer(1)
+      default: '1'

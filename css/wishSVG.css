@@ -1,0 +1,24 @@
+@charset "UTF-8";
+.wishListSVG{
+		width: 103px;
+		overflow:hidden;
+		animation: grow 0.5s forwards;
+	}
+	@keyframes grow{
+		0%{width: 0;}
+		100%{width: 103px;}
+	}
+	path{
+		fill: none;
+    	stroke: #000;
+    	stroke-width: 1;
+    	stroke-linecap: round;
+    	stroke-linejoin: round;
+    	stroke-miterlimit: 10;
+    	animation: draw 3.3s forwards;
+	}
+	@keyframes draw{
+		0%{stroke-dashoffset: 195;}
+		10%{fill:none;}
+		100%{stroke-dashoffset: 0;stroke-width:0; fill:#000;}
+	}
